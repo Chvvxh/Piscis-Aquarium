@@ -1,0 +1,317 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://www.bestwesternsiestakey.com/wp-content/uploads/2020/03/White-Sand-1024x683.jpg');
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    float: left;
+}
+
+.logo img {
+    width: 150px;
+    height:75px;
+    padding-top: 8px;
+}
+
+.menu {
+    float: left;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    height: 90px;
+    line-height: 120px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #4d92bbd8;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    position: relative;
+    font-size: 30px;
+    font-family: gabriola;
+    margin-top: 100px;
+    color: #FFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 5px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: aquamarine;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: aquamarine;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.slogan {
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 130px;
+    color: black;
+    text-align: center;
+    font-family: gabriola;
+    font-size: 40px;
+}
+
+/*Wrap Animal Pic Div & Animal Desc Div*/
+.animalwrapper {
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+/*Animal Title*/
+.animaltitle {
+    font-family: ink free;
+    font-size: 60px;
+}
+
+/*Animal Picture Div*/
+.animalpicdiv {
+    position: absolute;
+    left: 50px;
+}
+
+/*Animal Picture Size*/
+.animalimg {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 10px double rgb(191, 230, 248);
+    transition-duration: 0.8s;
+}
+
+.animalimg:hover {
+    transform: scale(1.2);
+}
+
+/*Animal Description*/
+.animaldescdiv {
+    position: absolute;
+    left: 450px;
+    font-family: ink free;
+    font-size: 25px;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 130px;
+    color: black;
+    text-align: center;
+    font-family: gabriola;
+    font-size: 40px;
+}
+
+.aboutuswrapper {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.desccontent {
+    font-family: ink free;
+    font-size: 60px;
+    text-align: center;
+}
+
+.aboutuslogo {
+    bottom: 100px;
+    position: absolute;
+    left: 100px;
+}
+
+.aboutusimg {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    border: 10px double rgb(191, 230, 248);
+    transition-duration: 0.8s;
+}
+
+.aboutusimg:hover {
+    transform: scale(1.15);
+}
+
+.desc {
+    bottom: 350px;
+    position: absolute;
+    left: 750px;
+    font-family: ink free;
+    font-size: 25px;
+}
+
+.formborder {
+    margin: 100px 480px;
+    padding: 40px;
+    background-color: rgba(168, 209, 233, 0.479);
+    width: 800px;
+}
+
+.titleform {
+    text-align: center;
+    font-family: gabriola;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.labelform{
+    font-family: grbariola;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    font-family: gabriola;
+    font-size: 25px;
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0px 30px 0px;
+    display: inline-block;
+    border: none;
+    background: #FFFF
+}
+
+input[type=submit] {
+    background-color: #0397c4;
+    font-family: gabriola;
+    font-size: 20px;
+    color: white;
+    padding: 20px 20px;
+    margin: 20px 280px;
+    border: double;
+    cursor: pointer;
+    width: 25%;
+}
+
+input[type=submit]:hover {
+    opacity: 1;
+}
+
+.footerbox {
+    padding-bottom: 50px;
+    background-color: #4d92bbd8;
+}
+
+.footerlogo a {
+    float: left;
+}
+
+.footerlogo img {
+    width: 300px;
+    height:150px;
+    padding-top: 15px;
+    margin-top: 55px;
+    margin-left: 100px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footercontent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 200px;
+    font-size: 25px;
+    font-family: gabriola;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: aquamarine;
+}
+
+.footertitle {
+    font-size: 40px;
+    color: black;
+}
+
+.footercontent1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: gabriola;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footertitle1 {
+    font-size: 40px;
+    color: black;
+}
+
+.iconMS {
+    margin-right: 20px;
+    width: 40px;
+    height:40px;
+    transition-duration: 0.7s;
+}
+
+.iconMS:hover {
+    transform: scale(1.3);
+}
